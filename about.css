@@ -40,7 +40,11 @@ body{
 }
 .container p{
     color: aliceblue;
-    font-size: 1.5vw;
+    font-size: 1.3vw;
+    line-height: 2vw;
+}
+.container span{
+    font-family: 'Protest Riot', sans-serif;
 }
 
 
