@@ -1,0 +1,239 @@
+.back-img{
+  width: 100%;
+  min-height: 100vh;
+  background-image: none;
+
+}
+
+.back{
+  width: 100vw;
+  height: max-content;
+  padding-bottom: 50vh;
+  margin-top: 0vh;
+  margin-bottom: 0;
+}
+
+main {
+  width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid white; */
+}
+.project-title{
+    /* border: 2px solid white; */
+    width: 80vw;
+    height: 20vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: aliceblue;
+    font-family: 'Lato', sans-serif;
+}
+.project-title h1{
+  
+  font-size: 3.5vw;}
+.project-title p{
+    margin-top: 1vw;
+    font-size: 2vw;
+    
+}
+
+
+/* *****************************projects*************************** */
+.project {
+    display: flex;
+    align-items: center;
+    margin-top: 5vw;
+    width: 70vw;
+    height: 40vw;
+    border: 2px solid rgb(103, 215, 103);
+    background-color: rgb(103, 215, 103, 0.9);
+    box-shadow: 0px 0px 10px 1px white;
+    border-radius: 20px;
+}
+
+.img-container {
+    /* border: 2px solid white; */
+    width: 40%;
+    height: 100%;
+    /* padding-bottom: 2%;  */
+    position: relative;
+    overflow: hidden;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+  
+  .img-container img {
+    position: absolute;
+    top: 0;
+    transform: translateX(-20%);
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+
+
+.project-info{
+    /* border: 2px solid white; */
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 5%;
+    margin-right: 2%;
+
+}
+.info-text{
+    /* border: 2px solid white; */
+    height: 80%;
+    padding-top: 5%;
+}
+.more{
+    display: flex;
+    justify-content: flex-end;
+    /* border: 2px solid white; */
+    margin-bottom: 4%;
+    margin-right: 4%;
+}
+.more button{
+    background-color: rgb(152, 40, 152);
+    border: 0;
+    padding: 2% 4%;
+    border-radius: 10px;
+}
+.more a{
+  text-decoration: none; 
+  color: aliceblue;
+  font-size: 1.2vw;
+}
+
+.more button:hover{
+    background-color: rgb(62, 117, 213);
+    cursor: pointer;
+}
+
+.project-info h2 {
+    font-family: 'Protest Riot', sans-serif;
+    font-size: 3vw;
+    margin-bottom: 10px;
+}
+
+.project-info p {
+    font-family: 'Diphylleia', sans-serif;
+    font-size: 2.5vw;
+}
+
+
+
+.footer{
+    /* background-image: url(blacksky.jpg); */
+    margin-top: 0vw;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.img-bottom-home {
+    width: 100vw;
+    height: 40vw;
+    background-image: url(images/moon-horizon.jpg);
+    background-size: cover;
+    /* background-position: center bottom 40%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    color: white;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .img-bottom-home:hover{
+    background-image: linear-gradient(rgba(15, 9, 9, 0.2), rgba(15, 9, 9, 0.2)), url(images/moon-horizon.jpg);
+  }
+  .footer-content{
+    margin-bottom: 3vw;
+  }
+  .img-bottom-home h3 {
+    font-size: 3vw;
+    margin-bottom: 0rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  .img-bottom-home p {
+    font-size: 2.5vw;
+    margin-bottom: 0rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+
+
+
+
+@media (max-width: 768px) {
+
+  .project{
+    width: 80vw;
+    height: 50vw;
+    margin-bottom: 10vw;
+  }
+
+  .project-info{
+    /* border: 2px solid white; */
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 5%;
+    margin-right: 2%;
+
+}
+
+
+.more a{
+  text-decoration: none; 
+  color: aliceblue;
+  font-size: 2vw;
+}
+
+
+.project-info h2 {
+    font-size: 3vw;
+    margin-bottom: 5%;
+}
+
+.project-info p {
+    font-size: 2.5vw;
+    line-height: 4vw;
+}
+}
+
+
+
+@media (max-width: 425px) {
+  .project-title h1{font-size: 5vw;}
+  .project-title p{
+      margin-top: 1vw;
+      font-size: 3.5vw;
+  }
+  .info-text{
+    /* border: 2px solid white; */
+    height: 80%;
+    padding-top: 7%;
+  }
+
+  .more a{
+    text-decoration: none; 
+    color: aliceblue;
+    font-size: 3vw;
+  }
+  
+}
+  
+
+
+

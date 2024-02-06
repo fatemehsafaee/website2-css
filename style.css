@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Riot$display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato$display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Diphylleia$display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.back-img{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(images/back3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+header{
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+.head{
+    background-color: #081448;
+    background-image: url(images/blacksky.jpg);
+    background-size: cover;
+    width: 100vw;
+    height: 15vh;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title, .links a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Protest Riot', sans-serif;
+}
+
+.title{
+    margin-left: 20vw;
+    
+}
+.links{
+    margin-right: 20vw;
+    
+}
+
+.links ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+}
+.links a{
+    margin-left: 50px;
+}
+.links a:hover{
+    color: rgb(103, 215, 103);
+}
+
+
+/* ************************main************************ */
+body{
+    height: 100%;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.back{
+    width: 100vw;
+    height: max-content;
+    margin-top: 5vh;
+    background-color: #081448;
+    background-image: url(images/blacksky.jpg);
+    background-size: cover;
+    position: static;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.title-img{
+    /* background-color: aliceblue; */
+    /* border: 2px solid white; */
+    color: aliceblue;
+    width:50%;
+    height: max-content;
+    margin-top: 5vw;
+    margin-bottom: 0;
+    margin-left: 15vw;
+    /* font-size: 1.5rem; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Lato', sans-serif;
+    
+}
+.title-img h1{
+    font-size: 3.2em;
+    margin: 10px 0;
+}
+.title-img p:first-child{font-size: 1.5em;}
+.title-img p:nth-of-type(2){
+    margin-bottom: 1px;
+    line-height: 2vw;}
+.title-img button{
+    width: max-content;
+    font-size: 1.2vw;
+    padding: 10px 15px;
+    margin-top: 3vw;
+    background-color: rgb(253, 127, 255);
+    border: 0;
+    border-radius: 3px;
+}
+
+.title-img button:hover{
+    background-color: rgb(39, 228, 74);
+    cursor: pointer;
+}
+
+/* ******************planets********************* */
+
+.news{
+    width: max-content;
+    /* height:250px; */
+    margin-bottom: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid white; */
+    margin-top: 5vw;
+}
+.news-img{
+    width: 30vw;
+    height: 30vw;
+    background-image: url(images/earth.png);
+    background-size: cover;
+    background-position: center;
+    /* background-attachment: fixed; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform linear 1s;
+}
+
+.explanation{
+    /* border: 1px solid aliceblue; */
+    color: rgba(240, 248, 255, 0);
+    margin-left: 10vw;
+    z-index: -1;
+    max-width: 30vw;
+    transition: all ease-out 1s;
+}
+.explanation h1{
+    font-family: 'Protest Riot', sans-serif;
+    font-size: 2vw;}
+.explanation p{
+    font-family: 'Diphylleia', sans-serif;
+    font-size: 1.5vw;}
+
+
+.news:hover .news-img{
+    z-index: 999;
+    transform: translateX(-10vw);
+}
+
+.news:hover .explanation{
+    z-index: -2;
+    /* visibility: visible; */
+    transform: translateX(22vw);
+    color: rgba(240, 248, 255);
+}
+
+
+.sun{
+    background-image: url(images/sun.png);
+}
+
+.moon{
+    background-image: url(images/brightmoon.png);
+}
+
+.mars{
+    background-image: url(images/mars.png);
+}
+
+/* ****************************footer********************** */
+.footer{
+    background-image: url(images/blacksky.jpg);
+    margin-bottom: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+
+.img-bottom-home {
+    width: 100vw;
+    height: 30vw;
+    background-image: url(images/astro2.jpg);
+    background-size: cover;
+    background-position: center bottom 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    color: black;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  .footer-content{
+    margin-bottom: 0.5vw;
+  }
+  .img-bottom-home h3 {
+    font-size: 3vw;
+    margin-bottom: 0rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  .img-bottom-home p {
+    font-size: 2.5vw;
+    margin-bottom: 0rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+
+
+/* *************************responsive********************** */
+@media (max-width: 768px) {
+    /* *****header***** */
+    
+    .title{
+        margin-left: 20vw;
+        font-size: 5vw;
+    }
+    .links{
+        font-size: 23w;
+        margin-right: 10vw;
+        
+    }
+    .links a{
+        margin-left: 5vw;
+    }
+    /* ****title-img****** */
+
+    .title{
+        margin-left: 10vw;
+    }
+    .links{
+        margin-right: 10vw;   
+    }
+
+    .title-img{
+        color: aliceblue;
+        /* border: 2px solid white; */
+        width:70%; 
+    }
+    .title-img h1{
+        font-size: 40px;
+        margin: 2vw 0;
+    }
+    .title-img p:first-child{font-size: 3.5vw;}
+    .title-img p:nth-of-type(2){
+        font-size: 2vw;
+        line-height: 2vw;}
+    .title-img button{
+        font-size: 1.3vw;
+        padding: 2vw 3vw;
+        margin-top: 3vw;
+    }
+}
+
+
+@media (max-width: 425px) {
+    /* *****header***** */
+    .head{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* border: 2px solid white; */
+    }
+    
+    .title{
+        margin-left: 0;
+        margin-bottom: 5vw;
+        font-size: 7vw;
+        /* border: 2px solid white; */
+    }
+    .links{
+        /* border: 2px solid white; */
+        width: 100vw;
+        margin: 0; 
+    }
+    
+    .links ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style-type: none;
+    }
+    .links a{
+        margin: 5vw;
+    }
+
+    .title-img button{
+        font-size: 2vw;
+        padding: 2vw 3vw;
+        margin-top: 3vw;
+    }
+
+    .news-img{
+        width: 40vw;
+        height: 40vw;
+    }
+    
+    .explanation{
+        /* border: 1px solid aliceblue; */
+        color: rgba(240, 248, 255, 0);
+        margin-left: 10vw;
+        z-index: -1;
+        max-width: 40vw;
+        transition: all ease-out 1s;
+    }
+    .explanation h1{font-size: 5vw;}
+    .explanation p{font-size: 3vw;}
+    .news:hover .news-img{
+        z-index: 999;
+        transform: translateX(-10vw);
+    }
+    
+    .news:hover .explanation{
+        z-index: -2;
+        /* visibility: visible; */
+        transform: translateX(32vw);
+        color: rgba(240, 248, 255);
+    }
+}
+
