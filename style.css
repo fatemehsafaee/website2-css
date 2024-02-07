@@ -120,6 +120,7 @@ main{
     border-radius: 3px;
 }
 
+.title-img button a{text-decoration: none; color: black;}
 .title-img button:hover{
     background-color: rgb(39, 228, 74);
     cursor: pointer;
